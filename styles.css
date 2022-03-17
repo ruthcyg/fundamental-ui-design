@@ -1,43 +1,115 @@
-/* Reset => Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
+/* body {
+  background-color: #7141c4;
+  height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightyellow;
+  margin: 30px 50px;
+} */
+
+/* Scenario 1 => Alignment */
+/* section:first-child {
+  align-self: flex-start;
+} */
+
+/* Scenario 2 => Contrast */
+/* section {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section:nth-child(3) {
+  background-color: rgba(255, 255, 255, 1);
+} */
+
+/* Scenario 3 => Color */
+/* section:nth-child(4) {
+  background-color: #feed00;
+} */
+
+/* Scenario 4 => Scale */
+/* section {
+  transform: scale(0.89);
+}
+
+section:nth-child(5) {
+  transform: scale(1.5);
+} */
+
+/* Scenario 5 => A Combination of UI Design Fundamentals */
+/* section {
+  transform: scale(0.89);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section:nth-child(2) {
+  transform: scale(1.5);
+  background-color: #feed00;
+} */
+
+/********************************************************* Example *************************************************/
+body {
+    padding: 2rem;
+    background: #5801cb;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
+  h1 {
+    font-size: 1rem;
   }
   
-  /* Sports */
-  #sports {
-    background-color: #f8f8f8;
-  
-    display: flex;
-  
-    justify-content: space-evenly; /* main axis */
-    align-items: center; /* cross axis */
+  form {
+    width: 500px;
+    padding: 20px;
   }
   
-  /* Shared styles for sections */
-  .sport {
-    width: 320px;
-    background-image: linear-gradient(135deg, #90f7ec 10%, #32ccbc 100%);
-  }
-  /* Improvements */
-#sports {
-    padding: 35px;
+  label {
+    display: block;
+    padding: 10px 0;
   }
   
-  .basketball {
-    padding: 27px;
+  input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    margin: 0 5px 0 0;
   }
   
-  .basketball h2 {
-    margin-bottom: 10px;
+  input[type="submit"] {
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    background: none;
   }
   
-  .basketball p {
-    line-height: 1.6;
-    /* line-height: 25px; */
+  /* Imrpovements */
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  form {
+    background-color: #6900f3;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  input[type="submit"] {
+    font-size: 0.8rem;
+    background-color: #ffed8c;
+    color: #5801cb;
+    font-weight: bold;
   }
 
