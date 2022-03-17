@@ -1,4 +1,4 @@
-/* Reset => Universal Selector */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,38 +6,72 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #444e5c;
+    border-left: 17px solid rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    padding: 30px;
   }
   
-  /* Sports */
-  #sports {
-    background-color: #f8f8f8;
+  /* Main Styling */
   
-    display: flex;
-  
-    justify-content: space-evenly; /* main axis */
-    align-items: center; /* cross axis */
+  /* Container */
+  .container {
+    width: 80%;
+    margin: 0 auto;
   }
   
-  /* Shared styles for sections */
-  .sport {
-    width: 320px;
-    background-image: linear-gradient(135deg, #90f7ec 10%, #32ccbc 100%);
-  }
-  /* Improvements */
-#sports {
-    padding: 35px;
+  /* Links */
+  a {
+    color: white;
+    text-decoration: none;
   }
   
-  .basketball {
-    padding: 27px;
+  /* Logo */
+  a.logo {
+    display: block;
+    padding-top: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
   }
   
-  .basketball h2 {
-    margin-bottom: 10px;
+  /* Heading */
+  h1 {
+    margin: 64px 0 30px 30px;
+    color: white;
   }
   
-  .basketball p {
-    line-height: 1.6;
-    /* line-height: 25px; */
+  /* Paragraph */
+  p {
+    color: #b2cef2;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  
+  /* CTA => (Call TO Action) Button */
+  a.cta {
+    display: inline-block;
+    background: #5099ff;
+    padding: 14px 28px;
+    font-weight: bold;
+    border-radius: 30px;
+    transform: translateX(50%);
+    margin-top: 32px;
+  }
+  
+  /* Show Column: */
+  
+  .container {
+    border-left: 1px solid rgba(255, 255, 255, 0);
   }
 
+
+  
+/* Improvements */
+h1 {
+    margin-left: 0;
+  }
+  
+  a.cta {
+    transform: none;
+  }
